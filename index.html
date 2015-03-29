@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Node Blog - Assignment7</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/Joe.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav nav-pills nav-justified" >
+                  <li role="presentation"><a href="index.html">Home</a></li>
+                  <li role="presentation"><a href="about.html">About</a></li>
+                  <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/node2.jpg')" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        </br></br></br></br></br>
+                        <h3>A college student's perspective</h3>
+                        <span class="meta">Posted by <a href="#">Joe Woodcox</a> on February 7, 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">What is Node?</h2>
+                    <p>Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux, FreeBSD, and IBM i.</p>
+                    <a href="#">
+                        <img class="img-responsive" src="img/node4.png" alt=""></img>
+                    </a>
+                    <p>Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS.</p>
+
+                   
+                    
+                    <h2 class="section-heading">Why was Node created?</h2>
+                    
+                    <p>Node.js was created and first published for Linux use in 2009. Its development and maintenance was inspired by Ryan Dahl and sponsored by Joyent, the firm where Dahl worked. Dahl was motivated to create Node.js after seeing a file upload progress bar on Flickr. 
+                    <a href="#">
+                        <img class="img-responsive" src="img/Ryan_Dahl.jpg" alt=""></img>
+                    </a>
+                    <span class="caption text">Creator of Node JS: Ryan Dahl</span>
+                    The browser did not know how much of the file had been uploaded and had to query the Web server. Dahl desired an easier way. Node gathered international attention after its debut at the inaugural JSConf EU conference. NPM, a package manager for Node.js libraries, was introduced in 2011.</p>
+
+                    
+                    <h2 class="section-heading">What does Node actually do?</h2>
+                    
+                    <p>Node establishes two-way connections where client and server can initiate communication, which allows for the flow of data back and forth seemlessly. What makes it different from other server side platforms is traditionally with other server side applications, the client initiates a request to the server, and then; the server responds to the client initiating the request. However with Node as Wikipedia states, "  Node uses an event loop, instead of processes or threads, to scale to millions of connections happening at the same time[citation needed. In contrast to other event-driven servers, Node.js's event loop does not need to be called explicitly. Instead callbacks are defined, and the server automatically enters the event loop at the end of the callback definition. Node.js exits the event loop when there are no further callbacks to be performed." Additionally, it’s all based on HTML, CSS and JS running over the standard port 80 that makes it desirable for developers to use.</p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/node3.jpg" alt=""></img>
+                    </a>
+
+                    
+
+                    <h2 class="section-heading">The Magic of Node</h2>
+
+                    <p>What makes Node special is that is considered a NIO(non-blocking Input/Output) application. OK, so speak english.</p>
+                    <p>An example of blocking is how some web servers like ones in Java or PHP handle requests. If your code does something blocking, like reading something from the database, your code "stalls" at that line and waits for the operation to finish. In that period, your machine is holding onto memory and processing time for a thread that isn't doing anything.</p>
+                    <p> What Node does is eliminate the blocking.   Node uses one thread to service all requests. Dahl designed it with the idea that the I/O is the bottleneck, not computations.When requests arrive at the server, they are serviced one at a time. When the code serviced needs to query a database, it sends off a request to that database. However, instead of waiting for the response and stall, it sends the callback to a second queue and the code continues running. Now when the database returns data, the callback gets queued in a third queue where they are pending execution. When the engine is doing nothing, it picks up a callback from the third queue and executes it. So basically it keeps multiple process running simulatenously.</p>
+                    
+                    
+
+                    <h2 class="section-heading">Wrapping it up</h2>
+
+                    <p>Node is a very powerful tool that was designed for client side, realtime type application processing efficiency and performance. It harnesses the power of Google's V8 and synchronizes it with HTML, CSS, and JS.  It is asynchronous, saves memory, and a must for any serious developer.  Happy Coding!!</p>
+
+                    
+
+                    
+                    <span class="caption text-muted">Any sufficiently advanced technology is indistinguishable from magic. ~Arthur C. Clarke</span>
+
+                    
+
+                    <p>Source code: <a href="https://github.com/joyent/node">NodeJS</a>. Get Started  <a href="http://nodejs.org/documentation/tutorials/">with Node JS</a>.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Joe Woodcox 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
